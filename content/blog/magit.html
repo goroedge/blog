@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>magit.html</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+
+</head>
+
+<body>
+
+<hr />
+
+<h1>type: docs</h1>
+
+<p>title: Как настроить и работать с Magit?
+slug: magit-setup
+date: 2024-10-26T12:51:54+03:00
+featured: false
+draft: false
+comment: true
+toc: true
+reward: true
+pinned: false
+carousel: false
+series:
+    - documentation
+categories:
+    - soft
+tags:
+    - magit
+    - emacs</p>
+
+<h2>images: []</h2>
+
+<p>Настройка Magit в Emacs и управление репозиторием.</p>
+
+<!--more-->
+
+
+<h1>Введение</h1>
+
+<p>Magit - это интерфейс к системе управления версиями Git, реализованный как пакет Emacs.</p>
+
+<p>Магит обертывает и во многих случаях улучшает по крайней мере следующий Git команды: <code>add</code>, <code>am</code>, <code>bisect</code>, <code>blame</code>, <code>branch</code>, <code>checkout</code>, <code>cherry</code>, <code>cherry-pick</code>, <code>clean</code>, <code>clone</code>, <code>commit</code>, <code>config</code>, <code>describe</code>, <code>diff</code>, <code>fetch</code>, <code>format-patch</code>, <code>init</code>, <code>log</code>, <code>merge</code>, <code>merge-tree</code>, <code>mv</code>, <code>notes</code>, <code>pull</code>, <code>rebase</code>, <code>reflog</code>, <code>remote</code>, <code>request-pull</code>, <code>reset</code>, <code>revert</code>, <code>rm</code>, <code>show</code>, <code>stash</code>, <code>submodule</code>, <code>subtree</code>, <code>tag</code> и <code>worktree</code>.</p>
+
+<h1>Установка</h1>
+
+<p>Magit может быть установлен с помощью менеджера пакетов Emacs’ или вручную из его репозиторий разработки.</p>
+
+<ol>
+<li><p>В файл конфигурации init.el добавить следующие две строки для доступа к репозиториям.
+Установка из Melpa:
+<code>emacs
+(require 'package)
+(add-to-list 'package-archives
+          '("melpa" . "https://melpa.org/packages/") t)
+</code>
+Установка из Melpa-Stable:
+<code>emacs
+(require 'package)
+(add-to-list 'package-archives
+          '("melpa-stable" . "https://stable.melpa.org/packages/") t)
+</code></p></li>
+<li><p>Выполнить команду
+<code>emacs
+M-x package-install RET magit RET
+</code></p></li>
+<li><p>Проверим установку Magit
+```emacs
+M-x magit-version RET</p></li>
+</ol>
+
+
+<p><code>``
+Сообщение:</code>Magit 20241010.1930 [>= 20241010.1930], Transient 20241009.1745, Git 2.46.1, Emacs 29.4, gnu/linux`
+подтвердит установку.</p>
+
+<h1>Команды Magit</h1>
+
+<p><code>C-x g</code> для отображения информации о текущем репозитории Git<br/>
+<code>s</code> / <code>u</code> добавить файл в индекс или убрать из индекса.<br/>
+<code>C-SPC</code> &mdash; поставить метку на файле <code>C-n</code> <code>C-p</code> отметить список файлов из отменить,потом <code>s</code> или <code>u</code> для включения или исключения.</p>
+
+<p><img src="magit.png#center" alt="center" /> TEXTS AROUNDS THE IMAGE.</p>
+
+<p><img src="magit.png" title="Use Image Title as Caption" alt="Image Caption" />
+{&lt; figure library=&ldquo;true&rdquo; src=&ldquo;magit.png&rdquo; title=&ldquo;A caption&rdquo; >}}
+markd
+<code>c</code> откроет меню для COMMIT и другие варианты, нажимаю еще раз <code>c</code>, ввожу комментарий commit  и нажимаю <code>C-c</code> для выполнения commit.</p>
+
+</body>
+</html>
