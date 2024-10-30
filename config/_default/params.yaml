@@ -19,7 +19,7 @@ keywords: Hugo, Bootstrap, Blog Theme
 # logo: false # Disable Logo
 brand: HBS
 
-palette: purple # Default palette. Optional. You'll need to clear the browser cache after modifying this.
+palette: cyan # Default palette. Optional. You'll need to clear the browser cache after modifying this.
 # Available palettes. Default to ALL. Empty array means disable.
 # palettes:
 #  - blue
@@ -172,16 +172,16 @@ creativeCommons:
 
 # See https://giscus.app
 giscus:
-  repo: "razonyang/hugo-theme-bootstrap-skeleton" # required.
-  repoId: "R_kgDOHJi95g" # required.
+  repo: "goroedge/blog" # required.
+  repoId: "878120035" # required.
   category: "General" # required.
   categoryId: "DIC_kwDOHJi95s4CTy6q" # required.
   # theme: "dark" # Default to auto.
   # mapping: "title" # Default to pathname.
-  # inputPosition: "bottom" # Default to top.
+  inputPosition: "bottom" # Default to top.
   # reactions: false # Disable reactions.
   # metadata: true # Emit discussion metadata.
-  # lang: "en" # Specify language, default to site language.
+  lang: "ru" # Specify language, default to site language.
   # lazyLoading: false # Default to true.
 
 search:

@@ -1,6 +1,6 @@
-baseURL: https://hbs-skeleton.netlify.app/
-title: Hugo Bootstrap Skeleton
-copyright: 'Copyright © 2016-{year} Razon Yang. All Rights Reserved.'
+baseURL: https://rabrain.ru/
+title: Профессиональная документация
+copyright: 'Copyright © 2092-{year} Краев Игорь. Все права защищены'
 defaultContentLanguage: en
 # hasCJKLanguage: true # Uncomment it if your content contains Chinese/Japanese/Korean Languages.
 # defaultContentLanguageInSubdir: true
